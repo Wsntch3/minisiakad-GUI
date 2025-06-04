@@ -1,0 +1,27 @@
+# Ignore build directories
+build-*/
+*.pro.user
+*.pro.user.*
+*.autosave
+
+# Qt Creator files
+*.autosave
+*.qmake.stash
+
+# Compiled files
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.dll
+
+# Backup files
+*~
+*.bak
+
+# CMake generated
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
