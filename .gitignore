@@ -1,27 +1,24 @@
-# Ignore build directories
-build-*/
-*.pro.user
-*.pro.user.*
-*.autosave
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Qt Creator files
-*.autosave
-*.qmake.stash
+node_modules
+dist
+dist-ssr
+*.local
 
-# Compiled files
-*.o
-*.obj
-*.so
-*.a
-*.exe
-*.dll
-
-# Backup files
-*~
-*.bak
-
-# CMake generated
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

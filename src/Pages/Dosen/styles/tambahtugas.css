@@ -1,0 +1,135 @@
+/* Global layout */
+.tugas-wrapper {
+  max-width: 1100px;
+  margin: 28px auto;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #1f2937;
+  padding: 0 16px;
+}
+
+/* Grid */
+.top-tugas-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  padding: 18px;
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* Form card specifics */
+.form-tugas-card .card-title,
+.daftar-tugas-card .card-title,
+.pengumpulan-wrapper .card-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 12px;
+}
+.form-group label {
+  display: block;
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.form-input, .form-select, .textarea-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 14px;
+  color: #111827;
+}
+.textarea-input {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Buttons */
+.btn-tambah-tugas,
+.btn-primary {
+  background: linear-gradient(180deg,#0ea5a4,#06999a);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-tambah-tugas[disabled],
+.btn-primary[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Small helper text */
+.small-muted {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Error and success boxes */
+.error-box {
+  background: #fff1f2;
+  color: #9f1239;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(159,18,57,0.08);
+}
+.message-box {
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 12px;
+  border: 1px solid rgba(6,95,70,0.08);
+}
+
+/* Table */
+.table-responsive-tugas {
+  overflow: auto;
+}
+.tugas-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+.tugas-table th, .tugas-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+}
+.tugas-table thead th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #374151;
+}
+.tugas-table tbody tr:hover {
+  background: #fbfbfd;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .top-tugas-grid {
+    grid-template-columns: 1fr;
+  }
+  .daftar-tugas-card {
+    order: 2;
+  }
+}
